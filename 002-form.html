@@ -1,0 +1,29 @@
+<!--
+This is a normal HTML page, it's code it will be always the same,
+it's not "dynamic" in the sense that contains no logic based on
+which to show different outputs.
+
+This page defines a form whom's target is a PHP script.
+
+When you submit an HTML form then it's data flies with the request and
+the target script can **access each form's field by name**.
+
+Form field's "name" attribute is very important when it comes to
+send some data to a PHP script.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>PHP002 - Form Example</title>
+</head>
+<body>
+    <form action="002-script.php" method="post">
+        <div>
+            <label for="answer">What's your name?</label><br>
+            <input type="text" name="answer">
+            <input type="submit" value="send"></input>
+        </div>
+    </form>
+</body>
+</html>
